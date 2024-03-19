@@ -100,11 +100,11 @@ export const skills = [
         image:
           "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
       },
-      // {
-      //   name: "Netlify",
-      //   image:
-      //     "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png",
-      // },
+      {
+        name: "Netlify",
+        image:
+          "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png",
+      },
       {
         name: "VS Code",
         image:
@@ -215,6 +215,22 @@ export const projects = [
     category: "web app",
     github: "https://github.com/dharaneesh-sm/LoanEase-Calc",
     webapp: "https://dharaneesh-sm.github.io/LoanEase-Calc/",
+  },
+  {
+    id: 1,
+    title: "Sudoku",
+    date: "Sep 2023",
+    description:
+      "This project is a simple implementation of the classic Sudoku puzzle game using HTML, CSS, and JavaScript. The game features a set of predefined puzzles without additional levels. Players can fill in the 9x9 grid by clicking on cells and typing numbers from 1 to 9. The game validates inputs automatically and provides feedback on completion.",
+    image: "",
+    tags: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+    ],
+    category: "web app",
+    github: "https://github.com/dharaneesh-sm/Sudoku",
+    webapp: "https://dharaneesh-sm.github.io/Sudoku/",
   },
 ];
 
