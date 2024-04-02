@@ -131,16 +131,16 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm(
-        "service_tox7kqs",
-        "template_nv7k7mj",
+      .send(
+        "service_yy4t1vs",
+        "template_yvpsrdo",
         form.current,
-        "SybVGsYS52j2TfLbi"
+        "5OovAq7UfhqeAZiQx"
       )
       .then(
         (result) => {
           alert("Message Sent");
-          form.current.resut();
+          // form.current.result();
         },
         (error) => {
           alert(error);
