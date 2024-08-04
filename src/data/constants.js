@@ -1,12 +1,14 @@
+import image1 from "../images/LoanEase-Calc.png"
+import Sudoku from "../images/Sudoku.png"
+
 export const Bio = {
   name: "Dharaneesh",
   roles: [
-    "Full Stack Developer",
-    "Java Backend Developer",
     "Programmer",
+    "Backend Developer",
   ],
   description:
-    "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
+    "I am enthusiastic and always looking for new opportunities. I love learning and aim to do my best in everything. With a positive attitude and a desire to grow, I am ready to make a big impact and achieve great things.",
   github: "https://github.com/dharaneesh-sm",
   resume:
     "https://drive.google.com/drive/folders/1k_FyecLK4SCaBxlDXOs3QyQjFLEpx1m5?usp=drive_link",
@@ -17,17 +19,22 @@ export const Bio = {
 
 export const skills = [
   {
-    title: "Frontend",
+    title: "Programming Languages",
     skills: [
       {
-        name: "React Js",
+        name: "Java",
         image:
-          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
       },
       {
-        name: "Redux",
+        name: "JavaScript",
         image:
-          "https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
+      },
+      {
+        name: "C",
+        image:
+          "https://w7.pngwing.com/pngs/724/306/png-transparent-c-logo-c-programming-language-icon-letter-c-blue-logo-computer-program-thumbnail.png",
       },
       {
         name: "HTML",
@@ -39,41 +46,32 @@ export const skills = [
           "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
       },
       {
-        name: "JavaScript",
+        name: "SQL",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
+          "https://www.svgrepo.com/show/331760/sql-database-generic.svg",
       },
-      {
-        name: "Bootstrap",
-        image:
-          "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
-      },
-      {
-        name: "Material UI",
-        image:
-          "data:image/png;base64,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",
-      },
+
     ],
   },
   {
-    title: "Backend",
+    title: "Frameworks and Libraries",
     skills: [
       {
-        name: "Java",
-        image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+        name: "Node Js",
+        image: "https://nodejs.org/static/images/logo.svg",
       },
       {
         name: "Spring Boot",
         image: "https://pbs.twimg.com/profile_images/1235868806079057921/fTL08u_H_400x400.png",
       },
       {
-        name: "Node Js",
-        image: "https://nodejs.org/static/images/logo.svg",
-      },
-      {
         name: "Express Js",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLA972a1NXwGHTIpgjxpRdu1DD5te1evggDgjNvM_FcbtGxaPYrHbV27RNzJSA_ZhrY28&usqp=CAU",
+      },
+      {
+        name: "React Js",
+        image:
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
       },
       {
         name: "MySQL",
@@ -91,19 +89,20 @@ export const skills = [
     title: "Others",
     skills: [
       {
+        name: "AWS",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRysX62yV0u_2qVQ1L8aX2YZPDCuto1Y1uhGw&s"
+
+      },
+      {
         name: "Git",
         image:
-          "https://e7.pngegg.com/pngimages/713/558/png-clipart-computer-icons-pro-git-github-logo-text-logo-thumbnail.png",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png",
       },
       {
         name: "GitHub",
         image:
-          "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-      },
-      {
-        name: "Netlify",
-        image:
-          "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png",
+          "https://cdn-icons-png.freepik.com/256/11023/11023876.png?semt=ais_hybrid"
       },
       {
         name: "VS Code",
@@ -123,11 +122,6 @@ export const skills = [
         name: "Spring Suite",
         image: "https://pbs.twimg.com/profile_images/1235954979783012354/t9lO8UAz_400x400.png"
       },
-      {
-        name: "Figma",
-        image:
-          "https://s3-alpha.figma.com/hub/file/1481185752/fa4cd070-6a79-4e1b-b079-8b9b76408595-cover.png",
-      },
     ],
   },
 ];
@@ -136,28 +130,30 @@ export const experiences = [
   {
     id: 0,
     img: "https://cdn-cp-assets-public.classplus.co/DamanBot/T0Hhkbiru7MR",
+    logo: "https://cdn-cp-assets-public.classplus.co/DamanBot/T0Hhkbiru7MR",
     role: "MERN Stack Intern",
     company: "Channel B.Tech",
     date: "June 2023",
-    desc: "Enhanced user experiences on Neurobit PSG & Hybrid, Portals by resolving bugs & reduced load time by 40%. Built Neurobit Analytics portal using React Js with seamless interaction of REST APIs using AXIOS optimized with React Query. Refactored previous code to TypeScript, updated with new dependency and integrated Vite with Jest for Unit Testing.",
+    desc: "During the MERN Stack internship: Proficiency in frontend development with ReactJS, focusing on responsive and interactive UIs. Understanding of database management principles using MongoDB Compass and Atlas. Backend development expertise in creating server-side solutions and API endpoints with Node.js and Express.js. Improved problem-solving skills through resolving technical challenges for optimized application performance.",
     skills: [
+      "JavaScript",
       "ReactJS",
       "NodeJs",
       "MongoDB",
+      "ExpressJS",
       "HTML",
-      "CSS",
-      "JavaScript",
-      "ExpressJS"
+      "CSS"
     ],
     doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Screenshot%20from%202024-01-25%2022-38-31.png?alt=media&token=2785903f-1a4e-41f5-afd2-6adcfe56d058",
   },
   {
     id: 1,
     img: "https://www.1cloudhub.com/wp-content/uploads/2020/01/1CloudHub-Logo-horiz-hires-RGB-copy-1.jpg",
+    logo: "https://pbs.twimg.com/profile_images/1165924093020921856/eS84WPK0_400x400.jpg",
     role: "AWS Intern",
     company: "1CloudHub",
     date: "Dec 2023",
-    desc: "Built Flipr Connect Platforms using React Js integrated GraphQL with AXIOS, created High level Design and Figma design. Built Backend with GraphQL and Node JS and connected with MongoDb - Reducing API calls by 20%. Dockerized and automated with Kubernetes & Jenkins CI/CD deployed in AWS-EC2 added Prometheus & Grafana for monitoring.",
+    desc: "Developed a deep understanding of fundamental AWS services, covering Virtual Private Clouds (VPC), Amazon S3, EC2 instances, and AWS Identity and Access Management (IAM). Strengthened expertise in key AWS concepts such as subnetting, security protocols, and foundational service utilization.",
     skills: [
       "VPC",
       "Subnetting",
@@ -202,11 +198,47 @@ export const education = [
 export const projects = [
   {
     id: 0,
+    title: "SpendWise",
+    date: "June 2023",
+    description:
+      "This project simplifies expense management with user-friendly interfaces for recording, categorizing, and tracking spending habits seamlessly. Users can effortlessly input expenses, categorize them, and monitor trends, all via intuitive designs. Intuitive features like easy expense editing and insightful visualizations empower users to make informed financial decisions based on their financial patterns.",
+    image: "",
+    tags: [
+      "ReactJs",
+      "NodeJs",
+      "MongoDB",
+      "ExpressJs",
+      "JavaScript",
+      "Html",
+      "Css"
+    ],
+    category: "web app",
+    github: "https://github.com/dharaneesh-sm/SpendWise",
+    webapp: "https://github.com/dharaneesh-sm/SpendWise",
+  },
+  {
+    id: 1,
+    title: "Weather Glance Bot",
+    date: "May 2024",
+    description:
+      "This project delivers a Telegram bot built with Node.js that provides real-time weather and time information for any city using the OpenWeatherMap API and Moment Timezone library. The bot interacts with users through the Telegram Bot API, responding to their queries with accurate data.",
+    image: "",
+    tags: [
+      "Node.js",
+      "OpenWeatherMap API",
+      "Telegram BOT"
+    ],
+    category: "web app",
+    github: "https://github.com/dharaneesh-sm/Weather-Glance-Bot",
+    webapp: "https://t.me/WeatherGlance_Bot",
+  },
+  {
+    id: 2,
     title: "LoanEase-Calc",
     date: "Aug 2023",
     description:
       "LoanEase Calc helps you quickly find out how much you'll pay each month and overall when you borrow money, making loan decisions easy to understand.",
-    image: "",
+    image: image1,
     tags: [
       "HTML5",
       "CSS3",
@@ -217,12 +249,47 @@ export const projects = [
     webapp: "https://dharaneesh-sm.github.io/LoanEase-Calc/",
   },
   {
-    id: 1,
+    id: 3,
+    title: "ArtiPhish",
+    date: "Aug 2023",
+    description:
+      "Chrome extension for cybersecurity, prioritizes user privacy through client-side processing, avoiding extensive data collection. It features real-time URL scanning with non-intrusive warnings, machine learning optimization for efficiency, secure updates, and a commitment to user empowerment, ensuring a seamless and secure online experience.",
+    image: "",
+    tags: [
+      "Machine Learning",
+      "JavaScript",
+      "HTML"
+    ],
+    category: "Extension",
+    github: "https://github.com/dharaneesh-sm/ArtiPhish",
+    webapp: "https://github.com/dharaneesh-sm/ArtiPhish",
+  },
+  {
+    id: 4,
+    title: "Contacts Management-API",
+    date: "March 2024",
+    description:
+      "This project allows users to manage contacts by creating, updating, retrieving, and deleting them, secured with JWT authentication. Users sign up, log in to receive a token, and use it to manage their contacts and view their account details. The API ensures password hashing for secure storage and uses Express.js for routing and MongoDB for data storage.",
+    image: "",
+    tags: [
+      "NodeJs",
+      "MongoDB",
+      "ExpressJs",
+      "JavaScript",
+      "CRUD-Api",
+      "JWT Authentication"
+    ],
+    category: "web app",
+    github: "https://github.com/dharaneesh-sm/Contacts-API",
+    webapp: "https://github.com/dharaneesh-sm/Contacts-API",
+  },
+  {
+    id: 5,
     title: "Sudoku",
     date: "Sep 2023",
     description:
       "This project is a simple implementation of the classic Sudoku puzzle game using HTML, CSS, and JavaScript. The game features a set of predefined puzzles without additional levels. Players can fill in the 9x9 grid by clicking on cells and typing numbers from 1 to 9. The game validates inputs automatically and provides feedback on completion.",
-    image: "",
+    image: Sudoku,
     tags: [
       "HTML5",
       "CSS3",

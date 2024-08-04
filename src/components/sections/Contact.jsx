@@ -22,7 +22,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 1350px;
-  padding: 0px 0px 80px 0px;
+  padding: 120px 0px 100px 0px;
   gap: 12px;
   @media (max-width: 960px) {
     flex-direction: column;
@@ -131,12 +131,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
-      .send(
-        "service_yy4t1vs",
-        "template_yvpsrdo",
-        form.current,
-        "5OovAq7UfhqeAZiQx"
-      )
+      .sendForm("service_yy4t1vs", "template_yvpsrdo", form.current, {publicKey:"5OovAq7UfhqeAZiQx"})
       .then(
         (result) => {
           alert("Message Sent");
@@ -151,12 +146,12 @@ const Contact = () => {
   return (
     <Container>
       <Wrapper>
-        <EarthCanvas />
+        {/* <EarthCanvas /> */}
         <Title>Contact</Title>
         <Desc>
           Feel free to reach out to me for any questions or opportunities!
         </Desc>
-        <ContactForm onSubmit={handleSubmit}>
+        <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
           <ContactInput placeholder="Your Email" name="from_email" />
           <ContactInput placeholder="Your Name" name="from_name" />
